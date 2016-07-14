@@ -1,0 +1,260 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+    <meta http-equiv="content-type" content="text/html;charset=utf-8">
+    <title>Verti - Multipurpose One & Multi Page HTML5&CSS3 Template</title>
+    <!-- Framework CSS -->
+    <link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+    <link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+    <!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+    <link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+    <style type="text/css" media="screen">
+        p, table, hr, .box { margin-bottom:25px; }
+        .box p { margin-bottom:10px; }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+
+        <h3 class="center alt">&ldquo;Verti - Multipurpose One & Multi Page HTML5&CSS3  template &rdquo; Documentation by &ldquo;MosaicDesign&rdquo; v1.0</h3>
+
+        <hr>
+
+        <h1 class="center">&ldquo;Verti- Multipurpose One & Multi Page template&rdquo;</h1>
+
+        <div class="borderTop">
+            <div class="span-6 colborder info prepend-1">
+                <p class="prepend-top">
+                    <strong>
+                        Created: 12/10/2015<br>
+                        By: MosaicDesign<br>
+                        Email: <a href="mailto:support@mosaicdesign.uz">support@mosaicdesign.uz</a>
+                    </strong>
+                </p>
+            </div><!-- end div .span-6 -->		
+
+            <div class="span-12 last">
+                <p class="prepend-top append-0">Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://themeforest.net/user/MosaicDesign">here</a>. Thanks so much!</p>
+            </div>
+        </div><!-- end div .borderTop -->
+
+        <hr>
+
+        <h2 id="toc" class="alt">Table of Contents</h2>
+        <ol class="alpha">
+            <li><a href="#htmlStructure">HTML Structure</a></li>
+            <li><a href="#cssFiles">CSS Files and Structure</a></li>
+            <li><a href="#javascript">JavaScript</a></li>
+            <li><a href="#credits">Sources and Credits</a></li>
+        </ol>
+
+        <hr>
+
+        <h3 id="htmlStructure"><strong>A) HTML Structure</strong> - <a href="#toc">top</a></h3>
+        <p>This theme is a responsive layout with container and one, two, three and four columns. Header informations are placed within &ldquo;header&rdquo; html5 tag. Footer informations are placed within &ldquo;footer&rdquo; html5 tag. All other informations are placed within &ldquo;section&rdquo; tags. The general template structure is the same throughout the template. Here is the general structure.</p>
+
+        <img src="assets/images/htmlstructure.png" alt="HTML Structure" />
+        <br><br><br><br>
+        
+        
+        <p>Two version of preload:</p>
+        <pre>	
+div id="preloader"
+div id="preloader" class="dark"
+        </pre>		
+        <br><br><br><br>
+        
+        
+        <p>If you use menu "gn-menu-main":</p>
+        <pre>	
+ul id="gn-menu" class="gn-menu-main dark"  - for dark version
+ul id="gn-menu" class="gn-menu-main"  - for light version
+        </pre>		
+        <br><br><br><br>
+        
+        
+        <p>If you use default menu:</p>
+        <pre>	
+div class="header-body" id="header-body-fixed"  - for dark version
+div class="header-body white" id="header-body-fixed"  - for light version
+        </pre>		
+        <br><br><br><br>        
+        
+        
+        <p>If you would like to change the backgroung color of sections, add this classes:</p>
+
+
+        <pre>	
+.color-scheme-1 
+.color-scheme-2 
+.color-scheme-3
+.color-scheme-4 
+.color-scheme-white-95 
+.color-scheme-dark-3
+.color-scheme-dark-75
+        </pre>
+
+        <br><br><br><br>
+        <p> Sections with own header background images</p>
+        <pre>	
+section id="home"
+section id="about"
+section id="services"
+section id="portfolio"
+section id="team"
+section id="blog"
+section id="contact"
+        </pre>
+        <br><br><br><br>
+        <p> if you use "temp1" class for sections, your  background images changing.</p>
+        <pre>	
+section id="about" class="temp1"
+section id="services" class="temp2"
+
+        </pre>
+        <br><br><br><br>
+        <p>Three version of section header H1. And align left default, align center add "center" to class</p>
+        <pre>
+div class="block-part-title"	
+div class="block-part-title white"
+div class="block-part-title white center"
+
+        </pre>
+
+        <br><br><br><br>
+        <p>Service block. Left, right and white version</p>
+        <pre>	
+div class="block-service"
+div class="block-service icon-left"
+div class="block-service icon-left white" 
+
+        </pre>
+
+
+
+        <br><br><br><br>
+        <p>block portfolio version</p>
+        <pre>	
+div class="block-portfolio active"
+div class="block-portfolio dark"
+div class="block-portfolio"
+        </pre>
+
+
+        <hr>
+
+        <h3 id="cssFiles"><strong>B) CSS Files and Structure</strong> - <a href="#toc">top</a></h3>
+
+        <p>I'm using two CSS files in this theme. The first one is a generic reset file. Many browser interpret the default behavior of html elements differently. By using a general reset CSS file, we can work round this. This file also contains some general styling, such as anchor tag colors, font-sizes, etc. Keep in mind, that these values might be overridden somewhere else in the file.</p> 
+
+        <p>The file is separated into sections using:</p>  
+
+        <pre>
+1. Common styles
+    1.1. Font-face
+    1.2. Block background style 
+    1.3. Content colors styles
+
+    
+2.  Preloader styles
+3.  Menu style ( Drop down menu )
+4.  Header styles
+5.  Google Nexus menu
+6.  Google Nexus menu DARK
+   
+7.  Section style
+8.  About  style
+9.  Service style
+10. Portfolio style
+11. Team style
+12. Blog style
+13. Contact style
+   
+11. Ajax style
+12. Shortcode style
+13. Background style
+14. Footer styles
+        </pre>
+
+        <p>If you need dark version of templade add dark-version.css</p> 
+
+        <hr>
+
+        <h3 id="javascript"><strong>C) JavaScript</strong> - <a href="#toc">top</a></h3>
+
+        <p>This theme imports three Javascript files.</p>
+
+        <ol>
+            <li>jQuery</li>
+            <li>jQuery easing</li>
+            <li>Bootstrap</li>
+            <li>jQuery flexisel</li>
+            <li>Wow</li>
+            <li>jQuery transit</li>
+            <li>jQuery jcountdown</li>
+            <li>jQuery jPages</li>
+            <li>Owl.carousel</li>
+            <li>Responsiveslides</li>
+            <li>jQuery.themepunch.revolution</li>
+            <li>My custom main.js file</li>
+        </ol>
+
+        <ol>
+            <li>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</li>
+            <li>Customs scripts. </li>
+        </ol>
+        <pre>	
+/* ==============================================
+ smooth scroll
+ =============================================== */
+$("#start").on("click", function () {
+    $('html, body').animate({
+        scrollTop: parseInt($("#about").offset().top)}, '800');
+    return false;
+
+});
+        </pre>
+
+        <br>
+        <pre>	
+/* ==============================================
+ TO TOP
+ =============================================== */
+$('#totop').on("click", function () {
+    $('html, body').animate({scrollTop: 0}, '1200');
+    return false;
+});
+        </pre>
+
+
+
+        <hr>
+
+        <h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+
+        <p>I've used the following images, icons or other files as listed.
+
+
+        <ul>
+            <li><a href="http://getbootstrap.com/" target="_blank">Twitter's Bootstrap 3.1</a></li>
+            <li>Google Fonts (<a href="http://www.google.com/fonts/specimen/OpenSans" target="_blank">OpenSans</a>)</li>
+            <li><a href="#" target="_blank">Ion Icons</a></li>
+            <li><a href="https://github.com/aristath/elusive-iconfont" target="_blank">Elusive Webfont</a></li>
+            <li><a href="http://github.com/rstacruz/jquery.transit" target="_blank">Transit.js</a></li>
+            <li><a href="http://daneden.me/animate" target="_blank">Animate.css</a></li>
+            <li>Many jQuery plugins from <a href="http://tympanus.net/codrops/" target="_blank">Codrops</a></li>
+            <li>And many more...</li>
+        </ul>
+
+        <hr>
+
+        <p>Once again, thank you so much for purchasing this theme. As we mentioned at the beginning, we'd be glad to help you if you have any questions relating to this theme. No guarantees, but we'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+
+        <p class="append-bottom alt large"><strong>Mosaic Design</strong></p>
+        <p><a href="#toc">Go To Table of Contents</a></p>
+
+        <hr class="space">
+    </div><!-- end div .container -->
+</body>
+</html>
